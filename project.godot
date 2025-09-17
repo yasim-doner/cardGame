@@ -11,5 +11,22 @@ config_version=5
 [application]
 
 config/name="CardGame"
-config/features=PackedStringArray("4.4", "Forward Plus")
+run/main_scene="uid://dhy56yui58lwn"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=180
+window/size/viewport_height=320
+window/stretch/mode="viewport"
+
+[layer_names]
+
+2d_render/layer_1="Cards"
+2d_render/layer_2="Slots"
+2d_render/layer_3="Board"
+
+[rendering]
+
+2d/snap/snap_2d_transforms_to_pixel=true

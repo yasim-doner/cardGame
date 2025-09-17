@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmhavtp47hemt"]
+
+[ext_resource type="Script" uid="uid://mekl3mr4mjik" path="res://board.gd" id="1_8l818"]
+[ext_resource type="PackedScene" uid="uid://bk86hpy2pps1f" path="res://slot.tscn" id="1_p0ybc"]
+[ext_resource type="PackedScene" uid="uid://bao6qsv2rq2x1" path="res://card.tscn" id="2_psm7c"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_8l818")
+card_scene = ExtResource("2_psm7c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Slots" type="Node2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="Slot" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(40, 79)
+input_pickable = true
+
+[node name="Slot2" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(136, 239)
+input_pickable = true
+
+[node name="Slot3" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(88, 239)
+input_pickable = true
+
+[node name="Slot4" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(40, 239)
+input_pickable = true
+
+[node name="Slot5" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(136, 159)
+input_pickable = true
+
+[node name="Slot6" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(88, 159)
+input_pickable = true
+
+[node name="Slot7" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(40, 159)
+input_pickable = true
+
+[node name="Slot8" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(136, 79)
+input_pickable = true
+
+[node name="Slot9" parent="Slots" instance=ExtResource("1_p0ybc")]
+position = Vector2(88, 79)
+input_pickable = true
